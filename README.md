@@ -50,3 +50,10 @@ postgres=# create database <db_name> owner <user_name>;
 postgres=# grant all privileges on database <db-name> to <user-name>;
 postgres=# \du
 postgres=# ALTER ROLE <user-name> WITH superuser createdb createrole;
+
+
+
+gem annotate  
+
+annotate --models --exclude fixtures
+https://github.com/ctran/annotate_models
