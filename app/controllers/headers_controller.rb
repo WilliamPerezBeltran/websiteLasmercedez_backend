@@ -4,7 +4,8 @@ class HeadersController < ApplicationController
   # Acción para listar todos los registros
   def index
     @headers = Header.all
-    render json: @headers
+
+    render json: HeaderSerializer.new(@headers).serialized_json
   end
 
   # Acción para mostrar un registro específico
@@ -16,7 +17,7 @@ class HeadersController < ApplicationController
   def create
     @header = Header.new(header_params)
     if @header.save
-      render json: @header, status: :created
+      render json: HeaderSerializer.new(@header).serialized_json, status: :created
     else
       render json: { errors: @header.errors.full_messages }, status: :unprocessable_entity
     end
@@ -27,7 +28,7 @@ class HeadersController < ApplicationController
   # Acción para actualizar un registro existente
   def update
     if @header.update(header_params)
-      render json: @header
+      render json: HeaderSerializer.new(@header).serialized_json
     else
       render json: { errors: @header.errors.full_messages }, status: :unprocessable_entity
     end
