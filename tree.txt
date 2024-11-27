@@ -1,0 +1,110 @@
+.
+├── api
+│   └── v1
+│       ├── image_fakes_controller.rb
+│       └── images_controller.rb
+├── app
+│   ├── channels
+│   │   └── application_cable
+│   │       ├── channel.rb
+│   │       └── connection.rb
+│   ├── controllers
+│   │   ├── api
+│   │   │   └── v1
+│   │   │       ├── image_fakes_controller.rb
+│   │   │       └── images_controller.rb
+│   │   ├── application_controller.rb
+│   │   ├── concerns
+│   │   └── headers_controller.rb
+│   ├── jobs
+│   │   └── application_job.rb
+│   ├── mailers
+│   │   └── application_mailer.rb
+│   ├── models
+│   │   ├── application_record.rb
+│   │   ├── concerns
+│   │   ├── header.rb
+│   │   └── image_fake.rb
+│   └── views
+│       └── layouts
+│           ├── mailer.html.erb
+│           └── mailer.text.erb
+├── bin
+│   ├── bundle
+│   ├── docker-entrypoint
+│   ├── rails
+│   ├── rake
+│   └── setup
+├── config
+│   ├── application.rb
+│   ├── boot.rb
+│   ├── cable.yml
+│   ├── credentials.yml.enc
+│   ├── database.yml
+│   ├── environment.rb
+│   ├── environments
+│   │   ├── development.rb
+│   │   ├── production.rb
+│   │   └── test.rb
+│   ├── initializers
+│   │   ├── cors.rb
+│   │   ├── filter_parameter_logging.rb
+│   │   └── inflections.rb
+│   ├── locales
+│   │   └── en.yml
+│   ├── master.key
+│   ├── puma.rb
+│   ├── routes.rb
+│   └── storage.yml
+├── config.ru
+├── db
+│   ├── migrate
+│   │   ├── 20241121192031_create_headers.rb
+│   │   └── 20241126021034_create_image_fakes.rb
+│   ├── schema.rb
+│   └── seeds.rb
+├── Dockerfile
+├── Gemfile
+├── Gemfile.lock
+├── HEAD~4
+├── lib
+│   └── tasks
+├── log
+│   └── development.log
+├── public
+│   └── robots.txt
+├── Rakefile
+├── README.md
+├── storage
+├── test
+│   ├── channels
+│   │   └── application_cable
+│   │       └── connection_test.rb
+│   ├── controllers
+│   │   ├── api
+│   │   │   └── v1
+│   │   │       └── images_fake_controller_test.rb
+│   │   └── headers_controller_test.rb
+│   ├── fixtures
+│   │   ├── files
+│   │   ├── headers.yml
+│   │   └── image_fakes.yml
+│   ├── integration
+│   ├── mailers
+│   ├── models
+│   │   ├── header_test.rb
+│   │   └── image_fake_test.rb
+│   └── test_helper.rb
+├── tmp
+│   ├── cache
+│   │       │   │   ├── 76a8a1fe7fb303
+│   │       └── load-path-cache
+│   ├── pids
+│   │   └── server.pid
+│   ├── restart.txt
+│   ├── sockets
+│   └── storage
+├── tree.txt
+└── vendor
+
+309 directories, 1968 files
