@@ -60,3 +60,13 @@ https://github.com/ctran/annotate_models
 
 
 http://localhost:3000/rails/info/routes
+https://github.com/Netflix/fast_jsonapi
+
+https://github.com/rubocop/rubocop
+
+
+
+```
+Rubocop
+rubocop -a app/
+```

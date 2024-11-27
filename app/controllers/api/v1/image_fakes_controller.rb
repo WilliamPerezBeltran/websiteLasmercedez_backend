@@ -29,13 +29,13 @@ class Api::V1::ImageFakesController < ApplicationController
 
   def destroy
     if @imageFake.destroy
-      render json: { message: "item destroyed" }, status: :ok
+      render json: { message: 'item destroyed' }, status: :ok
     else
-      render json: { message: "error in destroy item" }, status: :internal_server_error
+      render json: { message: 'error in destroy item' }, status: :internal_server_error
     end
   end
 
-  private 
+  private
 
   def image_fake_params
     params.require(:imageFake).permit(:path, :name, :typeImage, :url)
@@ -43,6 +43,6 @@ class Api::V1::ImageFakesController < ApplicationController
 
   def set_image_fake
     @imageFake = ImageFake.find_by(id: params[:id])
-    render json: { error: "image fake not found" }, status: :not_found unless @imageFake
+    render json: { error: 'image fake not found' }, status: :not_found unless @imageFake
   end
 end
