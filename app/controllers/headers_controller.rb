@@ -37,7 +37,7 @@ class HeadersController < ApplicationController
   # Acción para eliminar un registro
   def destroy
     @header.destroy
-    render json: { message: "Header eliminado con éxito" }, status: :ok
+    render json: { message: 'Header eliminado con éxito' }, status: :ok
   end
 
   private
@@ -50,6 +50,6 @@ class HeadersController < ApplicationController
   # Método para buscar y asignar un registro
   def set_header
     @header = Header.find_by(id: params[:id])
-    render json: { error: "Header no encontrado" }, status: :not_found unless @header
+    render json: { error: 'Header no encontrado' }, status: :not_found unless @header
   end
 end
